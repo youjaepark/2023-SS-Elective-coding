@@ -1,3 +1,4 @@
+#03/29
 국어 = 80
 영어 = 75 
 수학 = 55 
@@ -28,4 +29,10 @@ print(result)
  
 a = (1,2,3)
 a += (4,)
+print(a)
+
+a = {'A': 90,'B': 80,'C': 70}
+result = a['B']
+print(a)
+print(result)
 print(a)
