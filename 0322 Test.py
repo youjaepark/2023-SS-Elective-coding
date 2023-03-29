@@ -1,14 +1,13 @@
-a = (1,2,3)
-print(a)
-b = {"name": "Youjaep","age":18}
-print(b["name"])
-b = {"name": "Youjaep",
-     "age" : 18,
-     "subject" : "science"   
-     }
-print(list(b.keys()))
-print(list(b.values()))
-print(b.items())
-print(b.get("Name"))
-c = (1,2,4,4)
-a[3] = 0
+국어 = 80
+영어 = 75 
+수학 = 55 
+print((국어 + 영어 + 수학) /3)
+
+n = 13
+print(n%2 == 1)
+
+pin = "881120-1068234"
+yyyymmdd = pin[:6]
+num = pin[7:]
+print(yyyymmdd)
+print(num)
