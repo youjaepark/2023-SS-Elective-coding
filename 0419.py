@@ -24,6 +24,18 @@ row = 5
 while row >= 1:
     print("*" * row)
     row -= 1
-"""
-for i in range(1, 100):
-    print(i)
+
+num1 = int(input("첫번째 정수를 입력해주세요: "))
+num2 = int(input("두번째 정수를 입력해주세요: "))
+if num1 > num2:
+    print("Yes")
+else:
+    print("No")
+    """
+
+
+def add(a, b, c):
+    return a + b + c
+
+
+print(add(1, 2, 3))
