@@ -31,11 +31,24 @@ if num1 > num2:
     print("Yes")
 else:
     print("No")
-    """
+    
+"""
 
 
-def add(a, b, c):
-    return a + b + c
+def cal():
+    a = int(input("첫번째 숫자를 입력하세요: "))
+    b = int(input("두번째 숫자를 입력하세요: "))
+    i = input("기호를 입력하세요: ")
+    if i == "+":
+        return a + b
+    if i == "-":
+        return a - b
+    if i == "*":
+        return a * b
+    if i == "/":
+        return a / b
+    if i == "%":
+        return a % b
 
 
-print(add(1, 2, 3))
+print(cal())
