@@ -83,8 +83,6 @@ def avg(*args):
         result += i
     result = result / len(args)
     return result
-"""
-
 
 def nameage(n, a):
     print({n: a})
@@ -93,3 +91,16 @@ def nameage(n, a):
 name = input("이름을 입력하세요: ")
 age = input("나이를 입력하세요: ")
 nameage(name, age)
+"""
+
+
+def my(name, age, man=True):
+    print(f"나의 이름은 {name}입니다.")
+    print(f"나이는 {age}살입니다.")
+    if man:
+        print("남자")
+    else:
+        print("여자")
+
+
+my("박유재", 29, True)
