@@ -58,7 +58,6 @@ def three(a):
  
 i = int(input("숫자를 입력하세요: "))
 three(i)
-"""
 
 h = int(input("키를 입력하세요: "))
 w = int(input("몸무게를 입력하세요: "))
@@ -67,5 +66,30 @@ w = int(input("몸무게를 입력하세요: "))
 def bmi():
     print(round(int(w) / (int(h) / 100) ** 2, 2))
 
-
 bmi()
+
+def say():
+    return "2023년 5월 31일 수요일"
+
+def sub(a, b):
+    print(f"{a} 와 {b} 의 차는 {a-b} 입니다.")
+
+def sum(a, b):
+    return (a + b) / 2
+
+def avg(*args):
+    result = 0
+    for i in args:
+        result += i
+    result = result / len(args)
+    return result
+"""
+
+
+def nameage(n, a):
+    print({n: a})
+
+
+name = input("이름을 입력하세요: ")
+age = input("나이를 입력하세요: ")
+nameage(name, age)
