@@ -35,7 +35,12 @@ with open("C:/Users/haven06/Desktop/파이썬 고등/2023-SS-Elective-coding/dat
 
 with open("C:/Users/haven06/Desktop/파이썬 고등/2023-SS-Elective-coding/bmi.txt", "r") as b:
     while True:
-        line = b.readline().split(",")
-        weight = int(line[1])
-        height = int(line[2][1:4])
+        line = b.readline()
+        word = line.split(",")
+        print(word)
+        weight = int(word[1])
+        height = int(word[2][1:4])
         bmi = height / (weight**2)
+        print(bmi)
+        if not line:
+            break
