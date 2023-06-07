@@ -91,8 +91,6 @@ def nameage(n, a):
 name = input("이름을 입력하세요: ")
 age = input("나이를 입력하세요: ")
 nameage(name, age)
-"""
-
 
 def my(name, age, man=True):
     print(f"나의 이름은 {name}입니다.")
@@ -102,5 +100,32 @@ def my(name, age, man=True):
     else:
         print("여자")
 
-
 my("박유재", 29, True)
+
+f = open("C:/Users/haven06/Desktop/파이썬 고등/2023-SS-Elective-coding/테스트.txt", "w")
+
+for i in range(2, 16):
+    for j in range(1, 10):
+        data = f"{i} x {j} = {i*j}\n"
+        f.write(data)
+    f.write("\n")
+f.close()
+f = open("C:/Users/haven06/Desktop/파이썬 고등/2023-SS-Elective-coding/테스트.txt", "r")
+while True:
+    line = f.readline()
+    if not line:
+        break
+    print(line)
+f.close()
+
+with open("C:/Users/haven06/Desktop/파이썬 고등/2023-SS-Elective-coding/테스트.txt", "w") as f:
+    f.write()
+
+def is_odd(a):
+    if a % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+
+is_odd(10)
+"""
