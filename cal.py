@@ -24,12 +24,10 @@ class Calculator:
         self.create_button("3", 3, 2)
         self.create_button("-", 3, 3)
 
-        self.create_button("0", 4, 0)
-        self.create_button(".", 4, 1)
+        self.create_button("=", 4, 0)
+        self.create_button("0", 4, 1)
         self.create_button("C", 4, 2)
         self.create_button("+", 4, 3)
-
-        self.create_button("=", 5, 0, 1, 4)
 
     def create_button(self, text, row, col, rowspan=1, columnspan=1):
         button = tk.Button(
@@ -37,10 +35,12 @@ class Calculator:
             text=text,
             height=2,
             width=5,
-            font=("Arial", 13),
+            font=("Arial", 16),
             command=lambda: self.button_click(text),
         )
-        button.grid(row=row, column=col, rowspan=rowspan, columnspan=columnspan)
+        button.grid(
+            row=row, column=col, rowspan=rowspan, columnspan=columnspan, padx=2, pady=2
+        )
 
     def button_click(self, text):
         if text == "C":
