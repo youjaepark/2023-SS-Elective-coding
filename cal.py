@@ -51,7 +51,7 @@ class Calculator:
                 self.display.delete(0, tk.END)
                 self.display.insert(0, result)
             except:
-                self.display.delete(tk.END, text)
+                self.display.delete(tk.END)
                 self.display.insert(0, "ERROR")
         else:
             self.display.insert(tk.END, text)
