@@ -1,8 +1,8 @@
 import random
 
-first_name_samples = "김이박최정강조윤장임"
-middle_name_samples = "민서예지도하주윤채현지"
-last_name_samples = "준윤우원호후서연아은진"
+first_name_samples = "김이박최구정강조윤장임"
+middle_name_samples = "민서예지서도하주윤승채현지"
+last_name_samples = "준윤우원호후빈서연아재민은진"
 
 
 def random_name():
