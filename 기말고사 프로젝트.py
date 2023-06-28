@@ -19,9 +19,9 @@ with open("data.txt", "w") as d:
         d.write(
             random_name()
             + ","
-            + str(random.randrange(30, 100))
+            + str(random.randrange(40, 100))
             + ","
-            + str(random.randrange(100, 190))
+            + str(random.randrange(150, 190))
             + "\n"
         )
 
@@ -54,15 +54,12 @@ def get_weight_status(bmi):
 # bmi.txt 파일 읽어들이기
 with open("bmi.txt", "r") as file:
     lines = file.readlines()
-updated_lines = []
 
+updated_lines = []
 for line in lines:
     name, weight, height = line.strip().split(",")
-    height = int(height)
-    weight = int(weight)
-    bmi = calculate_bmi(weight, height)
-    weight_status = get_weight_status(bmi)
-    updated_line = f"{name},{weight},{height},{round(bmi)},{weight_status}\n"
+    bmi = calculate_bmi(int(height), int(weight))
+    updated_line = f"{name},{weight},{height},{round(bmi)},{get_weight_status(bmi)}\n"
     updated_lines.append(updated_line)
 
 with open("bmi.txt", "w") as file:
