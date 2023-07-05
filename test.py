@@ -40,3 +40,7 @@ a = FourCal()
 a.setdata(4, 2)
 print(a.add())
 """
+import mod
+
+a = mod.Math()
+print(a.solve(5))
